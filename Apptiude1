@@ -1,0 +1,28 @@
+package com.apptitude;
+
+import java.util.Scanner;
+
+public class Apptitude1 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		int [] a=new int [5];
+		float avg=0;
+		float sum=0;
+		System.out.println("enter 5 scores");
+		for(int i=0;i<=a.length-1;i++) 
+		{
+			a[i]=s.nextInt();
+		}
+		for(int j=0;j<=a.length-1;j++) 
+		{
+			sum=sum+a[j];
+		}
+		avg=sum/5;
+		System.out.println("The avg score of the cricket "+avg);
+		
+	}
+
+}
